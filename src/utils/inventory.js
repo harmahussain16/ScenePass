@@ -1,5 +1,6 @@
 
 import events from '../data/events'
+import { validateTicketQuantity } from './bookingRules.mjs'
 
 const INVENTORY_KEY = 'scenePassInventory'
 const BOOKINGS_KEY = 'scenePassBookings'
@@ -65,6 +66,7 @@ export function getAvailableSeats(eventId) {
 }
 
 // Reserve tickets when a booking is confirmed
+
 export function reserveTickets(eventId, quantity) {
   const inventory = getInventory()
   const available = inventory[eventId]
@@ -76,25 +78,10 @@ export function reserveTickets(eventId, quantity) {
     }
   }
 
-  if (!Number.isInteger(quantity) || quantity <= 0) {
-    return {
-      success: false,
-      message: 'Please select a valid ticket quantity.'
-    }
-  }
+  const validation = validateTicketQuantity(quantity, available)
 
-  if (quantity > MAX_TICKETS_PER_BOOKING) {
-    return {
-      success: false,
-      message: `You can book a maximum of ${MAX_TICKETS_PER_BOOKING} tickets per booking.`
-    }
-  }
-
-  if (quantity > available) {
-    return {
-      success: false,
-      message: `Only ${available} tickets are available.`
-    }
+  if (!validation.success) {
+    return validation
   }
 
   inventory[eventId] = available - quantity
@@ -106,6 +93,7 @@ export function reserveTickets(eventId, quantity) {
 
   return { success: true }
 }
+
 
 // Restore tickets when a booking is cancelled
 export function releaseTickets(eventId, quantity) {
