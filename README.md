@@ -184,3 +184,8 @@ The project is maintained using Git and GitHub. The repository contains the sour
   - View Bookings
   - Cancel Booking
   - Restore Ticket Availability
+
+## Project Links
+
+- **GitHub Repository:** https://github.com/harmahussain16/ScenePass
+- **Live Website:** https://scene-pass-peach.vercel.app
