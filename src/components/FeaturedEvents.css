@@ -1,0 +1,175 @@
+
+.featured-section {
+  padding: 85px 7%;
+  background-color: #fffdf8;
+}
+
+.featured-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 38px;
+}
+
+.featured-heading h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #18243a;
+  letter-spacing: -1.5px;
+  margin-bottom: 10px;
+}
+
+.featured-description {
+  color: #737b89;
+  font-size: 15px;
+}
+
+.featured-count {
+  color: #8b9099;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-bottom: 5px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.event-card {
+  background: #fffdf8;
+  border: 1px solid #eee9df;
+  border-radius: 13px;
+  overflow: hidden;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(24, 36, 58, 0.08);
+}
+
+.event-visual {
+  height: 190px;
+  background: linear-gradient(135deg, #26344b, #59677e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.event-card:nth-child(2) .event-visual {
+  background: linear-gradient(135deg, #a35f4c, #e6a47c);
+}
+
+.event-card:nth-child(3) .event-visual {
+  background: linear-gradient(135deg, #65766b, #a9b89d);
+}
+
+.event-card:nth-child(4) .event-visual {
+  background: linear-gradient(135deg, #51466b, #a18bb9);
+}
+
+.event-card:nth-child(5) .event-visual {
+  background: linear-gradient(135deg, #9b604e, #d59b79);
+}
+
+.event-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.93);
+  color: #18243a;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.event-symbol {
+  font-size: 55px;
+}
+
+.event-info {
+  padding: 22px;
+}
+
+.event-date {
+  color: #ed765f;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.event-info h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  color: #18243a;
+  margin-bottom: 12px;
+}
+
+.event-location {
+  font-size: 12px;
+  color: #858b96;
+  margin-bottom: 22px;
+}
+
+.event-bottom {
+  border-top: 1px solid #eee9df;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-label {
+  color: #858b96;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.event-bottom h4 {
+  color: #18243a;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.event-btn {
+  background: #ed765f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.event-btn:hover {
+  background: #d95e49;
+}
+
+@media (max-width: 900px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-heading h2 {
+    font-size: 28px;
+  }
+
+  .featured-count {
+    display: none;
+  }
+}

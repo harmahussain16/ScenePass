@@ -1,0 +1,135 @@
+
+const events = [
+  {
+    id: 1,
+    title: "The Grand Music Night",
+    category: "Concerts",
+    city: "Islamabad",
+    venue: "Jinnah Convention Centre",
+    date: "2026-12-05",
+    price: 2500,
+    availableSeats: 120,
+    description: "An unforgettable evening of live music and performances.",
+    image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Lahore Food Festival",
+    category: "Festivals",
+    city: "Lahore",
+    venue: "Greater Iqbal Park",
+    date: "2026-12-12",
+    price: 1500,
+    availableSeats: 200,
+    description: "Explore delicious food, culture and entertainment.",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "Creative Art Workshop",
+    category: "Workshops",
+    city: "Islamabad",
+    venue: "Lok Virsa",
+    date: "2026-12-15",
+    price: 1800,
+    availableSeats: 25,
+    description: "Discover your creativity through hands-on activities.",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "Modern Art Exhibition",
+    category: "Exhibitions",
+    city: "Karachi",
+    venue: "Arts Council",
+    date: "2026-12-18",
+    price: 1000,
+    availableSeats: 80,
+    description: "Experience contemporary art and creative expression.",
+    image: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=80",
+    featured: true
+  },
+  {
+    id: 5,
+    title: "Stand Up Comedy Night",
+    category: "Comedy Shows",
+    city: "Lahore",
+    venue: "Alhamra Arts Centre",
+    date: "2026-12-20",
+    price: 2000,
+    availableSeats: 60,
+    description: "Enjoy an entertaining night filled with laughter.",
+    image: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=80",
+    featured: true
+  },
+  {
+    id: 6,
+    title: "Campus Carnival",
+    category: "University Events",
+    city: "Islamabad",
+    venue: "University Grounds",
+    date: "2026-12-22",
+    price: 800,
+    availableSeats: 150,
+    description: "A fun-filled university celebration.",
+    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+    featured: false
+  },
+  {
+    id: 7,
+    title: "Acoustic Evening",
+    category: "Concerts",
+    city: "Karachi",
+    venue: "Port Grand",
+    date: "2027-01-05",
+    price: 2200,
+    availableSeats: 90,
+    description: "Enjoy beautiful acoustic music performances.",
+    image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
+    featured: false
+  },
+  {
+    id: 8,
+    title: "Winter Cultural Festival",
+    category: "Festivals",
+    city: "Islamabad",
+    venue: "F-9 Park",
+    date: "2027-01-10",
+    price: 1200,
+    availableSeats: 180,
+    description: "Celebrate culture, traditions and local talent.",
+    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    featured: false
+  },
+  {
+    id: 9,
+    title: "Photography Masterclass",
+    category: "Workshops",
+    city: "Lahore",
+    venue: "Alhamra",
+    date: "2027-01-15",
+    price: 2500,
+    availableSeats: 20,
+    description: "Learn photography techniques from experienced mentors.",
+    image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1200&q=80",
+    featured: false
+  },
+  {
+    id: 10,
+    title: "Student Talent Showcase",
+    category: "University Events",
+    city: "Karachi",
+    venue: "University Auditorium",
+    date: "2027-01-20",
+    price: 500,
+    availableSeats: 100,
+    description: "Discover performances by talented university students.",
+    image: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=80",
+    featured: false
+  }
+]
+
+export default events

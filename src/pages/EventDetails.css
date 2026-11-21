@@ -1,0 +1,237 @@
+
+.event-details-page {
+  background: #fffdf8;
+  min-height: 100vh;
+  padding: 55px 7% 80px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #687184;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.back-link:hover {
+  color: #ed765f;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+.details-main {
+  background: #f8f5ef;
+  border-radius: 16px;
+  padding: 35px;
+}
+
+.details-category {
+  display: inline-block;
+  background: #fce5df;
+  color: #d95e49;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.details-main h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 38px;
+  color: #18243a;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.details-description {
+  color: #737b89;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.details-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.details-info-item {
+  background: #fffdf8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.details-info-item p {
+  color: #858b96;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.details-info-item h3 {
+  color: #18243a;
+  font-size: 15px;
+}
+
+.booking-panel {
+  background: #fffdf8;
+  border: 1px solid #eee9df;
+  border-radius: 15px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(24, 36, 58, 0.05);
+}
+
+.booking-panel h2 {
+  font-family: 'Manrope', sans-serif;
+  color: #18243a;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.booking-panel > p {
+  color: #858b96;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.ticket-price-label {
+  color: #858b96;
+  font-size: 12px;
+}
+
+.ticket-price {
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  color: #18243a;
+  font-weight: 800;
+  margin: 7px 0 25px;
+}
+
+.seat-status {
+  background: #f8f5ef;
+  padding: 13px;
+  border-radius: 8px;
+  color: #687184;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.quantity-label {
+  display: block;
+  color: #18243a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.quantity-control button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #eee9df;
+  background: #fffdf8;
+  color: #18243a;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-control button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quantity-control span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #18243a;
+}
+
+.total-price {
+  border-top: 1px solid #eee9df;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.total-price p {
+  color: #687184;
+  font-size: 14px;
+}
+
+.total-price h3 {
+  color: #18243a;
+  font-size: 20px;
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 15px;
+  background: #ed765f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background: #d95e49;
+}
+
+.book-now-btn:disabled {
+  background: #b8b8b8;
+  cursor: not-allowed;
+}
+
+.details-error {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.details-error h2 {
+  color: #18243a;
+  margin-bottom: 15px;
+}
+
+.details-error a {
+  color: #ed765f;
+}
+
+@media (max-width: 800px) {
+  .details-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .event-details-page {
+    padding: 35px 5%;
+  }
+
+  .details-main {
+    padding: 23px;
+  }
+
+  .details-main h1 {
+    font-size: 29px;
+  }
+
+  .details-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
